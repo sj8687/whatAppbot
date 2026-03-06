@@ -33,11 +33,11 @@ client.on("ready", () => {
     }
   }
 
-  // schedule message at 11:05 PM
-  cron.schedule("8 23 * * *", () => {  // minute 8, hour 23
-    console.log("Sending scheduled message at 11:08 PM...");
-    sendMessage("Bro, this is your 11:08 PM message 😴");
-  });
+  // schedule message at 10:05 PM
+ cron.schedule("0 10 * * *", () => {  // minute 0, hour 10
+  console.log("Sending scheduled message at 10:00 AM...");
+  sendMessage("Good morning! ☀️");
+});
 });
 
 // start client
